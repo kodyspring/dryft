@@ -3,9 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { LandingComponent } from './pages/landing/landing.component';
 
 const routes: Routes = [
-  { path: "home", loadChildren: () => import('./pages/landing/landing.module').then((m) => m.LandingModule), data: { breadcrumb: 'home' }, },
-  { path: "", redirectTo: "home", pathMatch: "full" },
-  { path: "home", component: LandingComponent},
+  { path: "", loadChildren: () => import('./pages/landing/landing.module').then((m) => m.LandingModule), data: { breadcrumb: 'home' }, },
+  { path: "**", loadChildren: () => import('./pages/landing/landing.module').then((m) => m.LandingModule), data: { breadcrumb: 'home' }, },
 ];
 
 @NgModule({
