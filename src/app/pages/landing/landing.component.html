@@ -1,0 +1,23 @@
+<div nz-row nzJustify="space-between" nzAlign="middle">
+    <!-- Logo font -->
+    <div nz-col [nzXl]="14">
+        <span class="justify-center branding-font margin-left">Dryft</span>
+    </div>
+    <!-- Nav links and menu button  -->
+    <div nz-col [nzXl]="10">
+        <div nz-row nzJustify="end" nzAlign="middle" class="justify-center">
+            <div nz-col nzSpan="5">
+                <span (click)="navigate(solutionsPath)" class="branding hover">Solutions</span>
+            </div>
+            <div nz-col nzSpan="5">
+                <span (click)="navigate(aboutPath)" class="branding hover">About Us</span>
+            </div>
+            <div nz-col nzSpan="5">
+                <span (click)="navigate(contactPath)" class="branding hover">Contact</span>
+            </div>
+            <div nz-col nzSpan="5">
+                <button nz-button nzType="primary" nzSize="large" nzShape="circle"><span nz-icon nzType="menu" nzTheme="outline"></span></button>
+            </div>
+        </div>
+    </div>
+</div>

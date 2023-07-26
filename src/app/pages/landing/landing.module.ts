@@ -6,6 +6,9 @@ import { LandingComponent } from './landing.component';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzGridModule } from 'ng-zorro-antd/grid';
+import { AboutUsModule } from '../about-us/about-us.module';
+import { ContactModule } from '../contact/contact.module';
+import { SolutionsModule } from '../solutions/solutions.module';
 
 
 @NgModule({
@@ -17,7 +20,10 @@ import { NzGridModule } from 'ng-zorro-antd/grid';
     LandingRoutingModule,
     NzButtonModule,
     NzIconModule,
-    NzGridModule
+    NzGridModule,
+    AboutUsModule,
+    ContactModule,
+    SolutionsModule
   ],
   exports: [
     LandingComponent
