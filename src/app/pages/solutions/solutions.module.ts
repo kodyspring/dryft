@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { SolutionsRoutingModule } from './solutions-routing.module';
 import { SolutionsComponent } from './solutions.component';
+import { HeaderModule } from 'src/app/core/components/header/header.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { SolutionsComponent } from './solutions.component';
   ],
   imports: [
     CommonModule,
-    SolutionsRoutingModule
+    SolutionsRoutingModule,
+    HeaderModule
   ],
   exports: [
     SolutionsComponent

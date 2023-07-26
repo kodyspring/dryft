@@ -9,6 +9,7 @@ import { NzGridModule } from 'ng-zorro-antd/grid';
 import { AboutUsModule } from '../about-us/about-us.module';
 import { ContactModule } from '../contact/contact.module';
 import { SolutionsModule } from '../solutions/solutions.module';
+import { HeaderModule } from 'src/app/core/components/header/header.module';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { SolutionsModule } from '../solutions/solutions.module';
     NzGridModule,
     AboutUsModule,
     ContactModule,
-    SolutionsModule
+    SolutionsModule,
+    HeaderModule
   ],
   exports: [
     LandingComponent
