@@ -7,13 +7,13 @@
     <div nz-col [nzXl]="10">
         <div nz-row nzJustify="end" nzAlign="middle" class="justify-center">
             <div nz-col nzSpan="5">
-                <span class="branding">Solutions</span>
+                <span (click)="navigate(solutionsPath)" class="branding hover">Solutions</span>
             </div>
             <div nz-col nzSpan="5">
-                <span class="branding">About Us</span>
+                <span (click)="navigate(aboutPath)" class="branding hover">About Us</span>
             </div>
             <div nz-col nzSpan="5">
-                <span class="branding">Contact</span>
+                <span (click)="navigate(contactPath)" class="branding hover">Contact</span>
             </div>
             <div nz-col nzSpan="5">
                 <button nz-button nzType="primary" nzSize="large" nzShape="circle"><span nz-icon nzType="menu" nzTheme="outline"></span></button>
